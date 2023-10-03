@@ -33,29 +33,36 @@ header{
     top: 20%;
     text-transform: uppercase;
     color: var(--black);
-    font-weight: 1000;
+    font-weight: bolder;
     z-index: 10;
     width: 50%;
 }
 
-.butt{
-    background-color: var(--black);
-    border-radius: 50%;
-    font-size: 5px;
-    border: 1px solid #333;
-    min-width: 30px;
-    height: 30px;
-    transition: all 2s ease;
+.butt-two{
+   color: #333;
 }
 
+.btn-slider{
+    padding: 10px 60px;
+    background-color: #000;
+    border-radius: 20px;
+    border: 1px solid var(--light);
+    color: var(--light);
+    text-transform: uppercase;
+}
 
-.butt:hover{
+.btn-slider.two{
+    background-color: var(--light);
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+.btn-slider:hover{
+    color: var(--light);
+    border: none;
     background-color: var(--red);
 }
 
-.carousel-control-prev{
-    font-size: 10px;
-}
 
 .carousel-item:first-of-type .text,
 .carousel-item:last-of-type .text{
@@ -64,13 +71,8 @@ header{
     top: 20%;
     text-transform: uppercase;
     color: var(--light);
-    font-weight: 1000;
+    font-weight: bolder;
     
-}
-
-.text h2{
-    /* max-width: 80%;
-    min-width: 90%; */
 }
 
 .black{
@@ -275,13 +277,16 @@ header{
     margin: 0 auto;
     margin: 0 auto;
     position: relative;
-    width: 40%;
+    max-width: 60%;
+}
+.subscrib .inp input{
+    max-width: 100%;
 }
 .subscrib .inp span{
     position: absolute;
-    top: 7px;
+    top: 10%;
     background-color: var(--red);
-    right: 5px;
+    left: 78%;
     padding: 5px 10px;
     background-color: #111;
     color: #fff;
@@ -304,7 +309,7 @@ header{
 }
 
 .icons li i{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav ul li a{
@@ -324,19 +329,3 @@ nav li a:hover{
     color: var(--red) !important;
     cursor: pointer;
 }
-/* @media(min-width : 992px){
-    .ul-nav li{
-        margin-right: 7px;
-        color: #000;
-        font-weight: bold;
-        opacity: 1;
-        font-size: 17px;
-    }
-    
-    .ul-nav li i{
-        margin-right: 7px;
-    }
-    .ul-nav li a:hover{
-        color: var(--red);
-    }
-} */
