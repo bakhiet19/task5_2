@@ -10,7 +10,7 @@
     --margin: 70px;
     --red : red;
     --light : #fff;
-    --black : #000
+    --black : #000;
 }
 
 section{
@@ -43,12 +43,12 @@ header{
 }
 
 .slider{
-    height: 100vh;
+    height: 100vh !important;
 }
 
 .btn-slider{
     padding: 10px 60px;
-    background-color: #000;
+    background-color: var(--black);
     border-radius: 20px;
     border: 1px solid var(--light);
     color: var(--light);
@@ -79,6 +79,11 @@ header{
     
 }
 
+.subscrib-ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .black{
     display: none;
 }
@@ -93,7 +98,7 @@ header{
 }
 
 #close{
-    color: #fff;
+    color: var(--light);
     transition: all ease 1s;
     overflow-y: hidden;
 }
@@ -154,7 +159,7 @@ header{
   top: 315px;
   width: 12px;
   height: 12px;
-  background-color: #000;
+  background-color: var(--black);
   border-radius: 50%;
 }
 
@@ -162,7 +167,7 @@ header{
     text-align: center;
     min-height: 100px;
     width: 1px;
-    background-color: #000;
+    background-color: var(--black);
     margin-left: 5px;
 }
 
@@ -180,7 +185,7 @@ header{
     top: 315px;
     width: 12px;
     height: 12px;
-    background-color: #000;
+    background-color: var(--black);
     border-radius: 50%;
 }
 
@@ -189,7 +194,7 @@ header{
     text-align: center;
     min-height: 170px;
     width: 1px;
-    background-color: #000;
+    background-color: var(--black);
     margin-left: 5px;
 }
 
@@ -218,8 +223,8 @@ header{
     position: fixed;
     right: 40px;
     bottom: 70px;
-    background-color: #111;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--light);
     padding: 13px;
     border-radius: 30%;
     transition: all 1s ease-in-out;
@@ -228,7 +233,7 @@ header{
 .scroll .child:hover{
     cursor: pointer;
     background-color: var(--red);
-    color: #fff;
+    color: var(--light);
 }
 
 
@@ -292,8 +297,8 @@ header{
     background-color: var(--red);
     left: 78%;
     padding: 5px 10px;
-    background-color: #111;
-    color: #fff;
+    background-color: var(--black);
+    color: var(--light);
     border-radius: 50%;
 }
 
@@ -318,7 +323,7 @@ header{
 
 nav ul li a{
     font-size: 16px;
-    color: #000 !important;
+    color: var(--black) !important;
     opacity: 1;
     font-weight: 500;
 }
