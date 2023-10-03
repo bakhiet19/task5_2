@@ -41,8 +41,10 @@ header{
 .butt-two{
    color: #333;
 }
-
 .slider{
+    height: 100vh !important;
+}
+.slider img{
     height: 100vh !important;
 }
 
