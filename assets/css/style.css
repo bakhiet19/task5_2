@@ -41,12 +41,12 @@ header{
 .butt-two{
    color: #333;
 }
-.slider{
+/* .slider{
     height: 100vh !important;
 }
 .slider img{
     height: 100vh !important;
-}
+} */
 
 .btn-slider{
     padding: 10px 60px;
