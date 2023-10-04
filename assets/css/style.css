@@ -23,6 +23,10 @@ header{
     padding-bottom: 13px;
 }
 
+
+
+/* start slider section */
+
 .carousel-item{
     position: relative;
 }
@@ -41,12 +45,6 @@ header{
 .butt-two{
    color: #333;
 }
-/* .slider{
-    height: 100vh !important;
-}
-.slider img{
-    height: 100vh !important;
-} */
 
 .btn-slider{
     padding: 10px 60px;
@@ -55,6 +53,7 @@ header{
     border: 1px solid var(--light);
     color: var(--light);
     text-transform: uppercase;
+    transition: all 1s ease;
 }
 
 .btn-slider.two{
@@ -94,9 +93,11 @@ header{
     text-align: center;
 }
 
+
+/* strat close section */
+
 .note{
-    max-width: 200%;
-    overflow-x:hidden;
+    max-width: 100%;
 }
 
 #close{
@@ -115,6 +116,7 @@ header{
     cursor: pointer;
 }
 
+/* strat experince section */
 
 #experince h4{
     color: #aaa;
