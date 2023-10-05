@@ -131,9 +131,13 @@ nav li a:hover{
     width: 50%;
 }
 
-.butt-two{
-   color: #333;
+.one{
+   color: var(--light) !important;
+   background-color: var(--black) !important;
 }
+.one:hover{
+    color: var(--red) 
+ }
 
 .btn-slider{
     padding: 10px 60px;
@@ -544,6 +548,8 @@ end performance section */
         position: relative;
     }
     .carousel-item .two{
+    text-align: center;
+    margin: 0 auto;
     object-fit: contain;
     position: absolute;
     left: 15%;
@@ -556,7 +562,7 @@ end performance section */
     max-height: 50%;
     border-radius: 5%;
    }
-   .carousel-item:first-of-type .text,
+.carousel-item:first-of-type .text,
 .carousel-item:last-of-type .text{
     text-align: center;
     margin: 0 auto;
