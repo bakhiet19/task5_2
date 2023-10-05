@@ -35,7 +35,9 @@ nav ul li a{
     opacity: 1;
     font-weight: 500;
 }
-
+.dropdown-menu{
+    min-width: 400px;
+}
 .icons li i:hover{
     color: var(--red);
     cursor: pointer;
@@ -257,18 +259,23 @@ start performance section */
 
 .performance{
     max-width: 100%;
+    min-width: 100%;
     margin-top: 60px;
+    max-height: 90vh;
+    min-height: 90vh;
 }
 
 .performance .parent{
-    max-width: 50%;
+    min-width: 100%;
     position: relative;
+    margin: 10px auto !important;
+
 }
 
 .item1{
   position: absolute;
-  left: 180px;
-  top: 315px;
+  left: calc(100% - 85% );
+  top: calc(100% - 38%);
   width: 12px;
   height: 12px;
   background-color: var(--black);
@@ -285,8 +292,8 @@ start performance section */
 
 .item2{
     position: absolute;
-    left: 455px;
-    top: 315px;
+    left: calc(100% - 63%);
+    top: calc(100% - 38%);
     width: 12px;
     height: 12px;
     background-color: var(--black);
@@ -295,6 +302,44 @@ start performance section */
 
 
 .item2 .child{
+    text-align: center;
+    min-height: 170px;
+    width: 1px;
+    background-color: var(--black);
+    margin-left: 5px;
+}
+
+.item3{
+    position: absolute;
+    left: calc(100% - 40%);
+    top: calc(100% - 38%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--black);
+    border-radius: 50%;
+}
+
+
+.item3 .child{
+    text-align: center;
+    min-height: 100px;
+    width: 1px;
+    background-color: var(--black);
+    margin-left: 5px;
+}
+
+.item4{
+    position: absolute;
+    left: calc(100% - 15%);
+    top: calc(100% - 38%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--black);
+    border-radius: 50%;
+}
+
+
+.item4 .child{
     text-align: center;
     min-height: 170px;
     width: 1px;
@@ -396,9 +441,7 @@ end performance section */
 
 
 
-.dropdown-menu{
-    min-width: 400px;
-}
+
 
 
 .tsker{
@@ -427,6 +470,9 @@ end performance section */
     .btn-slider{
         padding: 10px 50px;
     }
+    .performance .parent img{
+        max-width: 900px;
+    }
 }
 
 @media(max-width : 992px){
@@ -445,6 +491,9 @@ end performance section */
     .btn-slider{
         padding: 10px 40px;
     }
+    .performance .parent img{
+        max-width: 750px;
+    }
 }
 
 @media(max-width : 768px){
@@ -462,6 +511,9 @@ end performance section */
     }
     .btn-slider{
         padding: 10px 30px;
+    }
+    .performance .parent img{
+        max-width: 600px;
     }
     
 }
@@ -482,4 +534,13 @@ end performance section */
     .btn-slider{
         padding: 7px 24px;
     }
+    .performance .parent img{
+        max-width: 350px;
+    }
+}
+
+
+
+.red{
+    background-color: rgba(255, 0, 0, 0.5); 
 }

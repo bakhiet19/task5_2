@@ -1,17 +1,10 @@
 let closes = document.querySelector('#close');
 let black = document.querySelector('.note');
-let items = document.querySelector('.item')
+let items = document.getElementsByClassName('item');
+let item3 = document.querySelector('.item3')
 let scrolls = document.querySelector('.scroll .child');
 let cards = document.querySelectorAll('.perfiction .card');
 let icon = document.querySelectorAll('.perfiction .card i');
-console.log(icon);
-
-
-
-
-
-
-
 
 
 
@@ -50,6 +43,26 @@ function clos(){
 }
 
 
-// setTimeout(function(){
-//     items.classList.toggle('var(--red)');
-// },3000)
+
+
+
+function add(){
+  setInterval(function(){
+    for(let i = 0 ; i < items.length ; i++){
+        items[i].classList.toggle('red');
+    }
+  },3000)
+   
+}
+
+add()
+
+
+function add_item3(){
+    setInterval(function(){
+     item3.classList.toggle('red');
+    },4500)
+     
+  }
+  
+  add_item3()
