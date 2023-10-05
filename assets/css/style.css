@@ -236,7 +236,7 @@ hr{
 }
 
 .features .row .child img:hover{
-    transform: scale(.8);
+    transform: scale(.5);
     cursor: pointer;
 }
 
@@ -529,6 +529,49 @@ end performance section */
     .subscrib .inp{
         min-width: 80%;
     }
+    .subscrib-ul{
+        display: block;
+        text-align: center;
+    }
+    .subscrib ul li{
+        display: block;
+        margin-bottom: 5px;
+    }
+    .subscrib ul li::after{
+        content: '';
+    }
+    .carousel-item{
+        position: relative;
+    }
+    .carousel-item .two{
+    object-fit: contain;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    background-color: var(--light);
+    padding: 40px;
+    color: var(--black);
+    min-width: 70%;
+    max-width: 70%;
+    max-height: 50%;
+    border-radius: 5%;
+   }
+   .carousel-item:first-of-type .text,
+.carousel-item:last-of-type .text{
+    text-align: center;
+    margin: 0 auto;
+    object-fit: contain;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    background-color: var(--black);
+    padding: 40px;
+    color: var(--light);
+    min-width: 50%;
+    max-width: 70%;
+    border-radius: 5%;
+    max-height: 50%;
+}
 }
 
 
