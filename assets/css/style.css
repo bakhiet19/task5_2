@@ -115,12 +115,6 @@ nav li a:hover{
 
 /* start slider section */
 
-/* .slider .carousel-item img{
-    min-height: 70vh;
-    max-height: 70vh;
-    width: 70vw;
-
-} */
 
 .carousel-item{
     position: relative;
@@ -517,6 +511,9 @@ end performance section */
 }
 
 @media(max-width : 467px){
+    .carousel-item:first-of-type .text,
+    .carousel-item:last-of-type .text{
+    top: 40%;}
     .slider h2{
         font-size: 26px !important;
     }
