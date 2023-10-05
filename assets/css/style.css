@@ -261,8 +261,8 @@ start performance section */
     max-width: 100%;
     min-width: 100%;
     margin-top: 60px;
-    max-height: 90vh;
-    min-height: 90vh;
+    max-height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -393,13 +393,6 @@ end performance section */
     background-repeat: no-repeat;
 }
 
-.subscrib input{
-    border-radius: 17px;
-    width : 450px;
-    height: 45px;
-    padding: 5px 10px;
-}
-
 .subscrib input:focus{
     border: 1px solid var(--red);
     outline: var(--red);
@@ -422,16 +415,21 @@ end performance section */
     margin: 0 auto;
     margin: 0 auto;
     position: relative;
-    max-width: 70%;
+    max-width: 35%;
+    min-width: 35%;
 }
 .subscrib .inp input{
     max-width: 100%;
+    min-width: 100%;
+    border-radius: 17px;
+    padding: 5px 10px;
+    height: 45px;
 }
 .subscrib .inp span{
     position: absolute;
     top: 10%;
     background-color: var(--red);
-    left: 74%;
+    left: 90%;
     padding: 5px 10px;
     background-color: var(--black);
     color: var(--light);
