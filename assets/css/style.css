@@ -263,6 +263,7 @@ start performance section */
     margin-top: 60px;
     max-height: 90vh;
     min-height: 90vh;
+    text-align: center;
 }
 
 .performance .parent{
@@ -421,7 +422,7 @@ end performance section */
     margin: 0 auto;
     margin: 0 auto;
     position: relative;
-    max-width: 60%;
+    max-width: 70%;
 }
 .subscrib .inp input{
     max-width: 100%;
@@ -430,7 +431,7 @@ end performance section */
     position: absolute;
     top: 10%;
     background-color: var(--red);
-    left: 78%;
+    left: 74%;
     padding: 5px 10px;
     background-color: var(--black);
     color: var(--light);
@@ -439,7 +440,9 @@ end performance section */
 
 /* end subscrib section */
 
-
+.red{
+    background-color: rgba(255, 0, 0, 0.5); 
+}
 
 
 
@@ -494,15 +497,12 @@ end performance section */
     .performance .parent img{
         max-width: 750px;
     }
+    .subscrib .inp span{
+        left: 88%;
+    }
 }
 
 @media(max-width : 768px){
-    .slider .carousel-item img{
-        min-height: 70vh;
-        max-height: 70vh;
-        width: 70vw;
-    
-    }
     .slider h2{
         font-size: 30px !important;
     }
@@ -513,18 +513,12 @@ end performance section */
         padding: 10px 30px;
     }
     .performance .parent img{
-        max-width: 600px;
+        max-width: 467px;
     }
     
 }
 
 @media(max-width : 467px){
-    .slider .carousel-item img{
-        min-height: 70vh;
-        max-height: 70vh;
-        width: 70vw;
-    
-    }
     .slider h2{
         font-size: 26px !important;
     }
@@ -541,6 +535,3 @@ end performance section */
 
 
 
-.red{
-    background-color: rgba(255, 0, 0, 0.5); 
-}
