@@ -18,14 +18,107 @@ section{
     margin-bottom: var(--margin);
 }
 
+/* end global section */
+
+
+/* start header section */
+
+
 header{
     border-bottom: 1px solid #bbb;
     padding-bottom: 13px;
 }
 
+nav ul li a{
+    font-size: 16px;
+    color: var(--black) !important;
+    opacity: 1;
+    font-weight: 500;
+}
+
+.icons li i:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+
+
+nav li a:hover{
+    color: var(--red) !important;
+    cursor: pointer;
+}
+
+/* end header section */
+
+
+
+
+
+
+
+/* start scroll section */
+
+.scroll{
+    position: relative;
+    z-index: 100;
+}
+
+.scroll .child{
+    position: fixed;
+    right: 40px;
+    bottom: 70px;
+    background-color: var(--black);
+    color: var(--light);
+    padding: 13px;
+    border-radius: 30%;
+    transition: all 1s ease-in-out;
+}
+
+.scroll .child:hover{
+    cursor: pointer;
+    background-color: var(--red);
+    color: var(--light);
+}
+
+/* end scroll section */
+
+
+
+/* start close section */
+
+.note{
+    max-width: 100%;
+}
+
+#close{
+        color: var(--light);
+        transition: all ease 1s;
+        overflow-y: hidden;
+}
+    
+#close:hover{
+        color: var(--red);
+        transition: all ease 2s;
+ }
+
+ #shop:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+ /* end close section */
+
+
+
+
 
 
 /* start slider section */
+
+/* .slider .carousel-item img{
+    min-height: 70vh;
+    max-height: 70vh;
+    width: 70vw;
+
+} */
 
 .carousel-item{
     position: relative;
@@ -80,11 +173,6 @@ header{
     
 }
 
-.subscrib-ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .black{
     display: none;
 }
@@ -92,29 +180,15 @@ header{
 .p-one{
     text-align: center;
 }
+/* 
+end slider section */
 
 
-/* strat close section */
 
-.note{
-    max-width: 100%;
-}
 
-#close{
-    color: var(--light);
-    transition: all ease 1s;
-    overflow-y: hidden;
-}
 
-#close:hover{
-    color: var(--red);
-    transition: all ease 2s;
-}
 
-#shop:hover{
-    color: var(--red);
-    cursor: pointer;
-}
+
 
 /* strat experince section */
 
@@ -131,13 +205,30 @@ header{
 .gray{
     color: #aaa;
     font-weight: normal;
-    transition: transform 5s ease-in-out;
+    transition: all 5s ease-in-out;
 }
 
 #experince img:hover{
     transform: scale(.8);
     cursor: pointer;
 }
+hr{
+    width: 100%;
+    size: 1px;
+    background-color: var(--black);
+    display: none;
+}
+
+/* end experince section */
+
+
+
+
+
+
+
+
+/* start features section */
 
 .features .row .child{
     margin-top: 40px;
@@ -153,7 +244,24 @@ header{
     cursor: pointer;
 }
 
+/* end features section */
+
+
+
+
+
+
+
+/* 
+start performance section */
+
+.performance{
+    max-width: 100%;
+    margin-top: 60px;
+}
+
 .performance .parent{
+    max-width: 50%;
     position: relative;
 }
 
@@ -175,14 +283,6 @@ header{
     margin-left: 5px;
 }
 
-/* .var(--red){
-    padding: 5px;
-    border-radius: 50%;
-    background-color: var(--red);
-} */
-
-
-
 .item2{
     position: absolute;
     left: 455px;
@@ -202,43 +302,17 @@ header{
     margin-left: 5px;
 }
 
-.performance{
-    max-width: 100%;
-    margin-top: 60px;
-    /* height: 110vh; */
-}
-
-.performance .parent{
-    max-width: 50%;
-}
-
 .performance-img{
     margin-left: -22px;
     margin-top: 20px;
     max-width: 100%;
 }
+/* 
+end performance section */
 
-.scroll{
-    position: relative;
-    z-index: 100;
-}
 
-.scroll .child{
-    position: fixed;
-    right: 40px;
-    bottom: 70px;
-    background-color: var(--black);
-    color: var(--light);
-    padding: 13px;
-    border-radius: 30%;
-    transition: all 1s ease-in-out;
-}
 
-.scroll .child:hover{
-    cursor: pointer;
-    background-color: var(--red);
-    color: var(--light);
-}
+/* start perfiction section */
 
 
 .perfiction{
@@ -255,6 +329,15 @@ header{
 .perfiction .card button{
     font-size: 18px;
 }
+
+
+/* end perfiction section */
+
+
+
+
+
+/* start subscrib section */
 
 
 .subscrib{
@@ -275,7 +358,10 @@ header{
     border: 1px solid var(--red);
     outline: var(--red);
 }
-
+.subscrib-ul{
+    display: flex;
+    flex-wrap: wrap;
+}
 .subscrib ul li{
     margin-right: 20px;
     text-align: center;
@@ -306,8 +392,12 @@ header{
     border-radius: 50%;
 }
 
+/* end subscrib section */
+
+
+
 .dropdown-menu{
-    min-width: 500px;
+    min-width: 400px;
 }
 
 
@@ -325,20 +415,71 @@ header{
     font-size: 20px;
 }
 
-nav ul li a{
-    font-size: 16px;
-    color: var(--black) !important;
-    opacity: 1;
-    font-weight: 500;
+
+
+@media(max-width : 1200px){
+    .slider h2{
+        font-size: 52px !important;
+    }
+    .slider h3{
+        font-size: 32px;
+    }
+    .btn-slider{
+        padding: 10px 50px;
+    }
 }
 
-.icons li i:hover{
-    color: var(--red);
-    cursor: pointer;
+@media(max-width : 992px){
+    .slider .carousel-item img{
+        min-height: 70vh;
+        max-height: 70vh;
+        width: 70vw;
+    
+    }
+    .slider h2{
+        font-size: 40px !important;
+    }
+    .slider h3{
+        font-size: 32px;
+    }
+    .btn-slider{
+        padding: 10px 40px;
+    }
 }
 
+@media(max-width : 768px){
+    .slider .carousel-item img{
+        min-height: 70vh;
+        max-height: 70vh;
+        width: 70vw;
+    
+    }
+    .slider h2{
+        font-size: 30px !important;
+    }
+    .slider h3{
+        font-size: 22px;
+    }
+    .btn-slider{
+        padding: 10px 30px;
+    }
+    
+}
 
-nav li a:hover{
-    color: var(--red) !important;
-    cursor: pointer;
+@media(max-width : 467px){
+    .slider .carousel-item img{
+        min-height: 70vh;
+        max-height: 70vh;
+        width: 70vw;
+    
+    }
+    .slider h2{
+        font-size: 26px !important;
+    }
+    .slider h3{
+        font-size: 20px;
+    }
+    .btn-slider{
+        padding: 7px 24px;
+    }
 }
