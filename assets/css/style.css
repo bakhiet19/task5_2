@@ -13,12 +13,18 @@
     --black : #000;
 }
 
-/* section{
-    margin-top: var(--margin);
-    margin-bottom: var(--margin);
-} */
 
+hr{
+    width: 100%;
+    size: 1px;
+    background-color: var(--black);
+    display: none;
+}
 /* end global section */
+
+
+
+
 
 
 /* start header section */
@@ -85,6 +91,10 @@ nav li a:hover{
 
 
 
+
+
+
+
 /* start close section */
 
 .note{
@@ -107,6 +117,9 @@ nav li a:hover{
     cursor: pointer;
 }
  /* end close section */
+
+
+
 
 
 
@@ -192,6 +205,11 @@ end slider section */
 
 /* strat experince section */
 
+#experince{
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+
 #experince h4{
     color: #aaa;
     letter-spacing: 1.5px;
@@ -205,19 +223,17 @@ end slider section */
 .gray{
     color: #aaa;
     font-weight: normal;
-    transition: all 5s ease-in-out;
+}
+
+#experince img{
+    transition: all 1s ease-in-out;
 }
 
 #experince img:hover{
     transform: scale(.8);
     cursor: pointer;
 }
-hr{
-    width: 100%;
-    size: 1px;
-    background-color: var(--black);
-    display: none;
-}
+
 
 /* end experince section */
 
@@ -367,6 +383,8 @@ end performance section */
 
 
 .perfiction{
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
     background-image: url('../img/footer_ad0f20f1-29b5-4188-8127-a6667ac6aea9_1920X_1.webp');
     padding-top: 50px;
     padding-bottom: 50px;
@@ -605,6 +623,9 @@ footer p{
     max-width: 70%;
     border-radius: 5%;
     max-height: 50%;
+}
+hr{
+    display: block;
 }
 }
 
