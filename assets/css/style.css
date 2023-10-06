@@ -41,9 +41,6 @@ nav ul li a{
     opacity: 1;
     font-weight: 500;
 }
-.dropdown-menu{
-    min-width: 300px;
-}
 .icons li i:hover{
     color: var(--red);
     cursor: pointer;
@@ -462,6 +459,18 @@ end performance section */
 
 /* end subscrib section */
 
+
+
+
+
+
+
+
+
+
+
+/* start footer section */
+
 footer ul li img{
     padding-top: 12px 5px;
     width: 30px;
@@ -473,7 +482,7 @@ footer p{
     margin-top: 12px;
 }
 
-
+/* end footer section */
 
 
 .red{
@@ -499,6 +508,8 @@ footer p{
 
 
 
+
+
 @media(max-width : 1200px){
     .slider h2{
         font-size: 52px !important;
@@ -513,6 +524,8 @@ footer p{
         max-width: 900px;
     }
 }
+
+
 
 @media(max-width : 992px){
     .slider .carousel-item img{
@@ -541,6 +554,9 @@ footer p{
     }
 }
 
+
+
+
 @media(max-width : 768px){
     .slider h2{
         font-size: 30px !important;
@@ -560,36 +576,9 @@ footer p{
     
 }
 
+
+
 @media(max-width : 467px){
-    .carousel-item:first-of-type .text,
-    .carousel-item:last-of-type .text{
-    top: 40%;}
-    .slider h2{
-        font-size: 26px !important;
-    }
-    .slider h3{
-        font-size: 20px;
-    }
-    .btn-slider{
-        padding: 7px 24px;
-    }
-    .performance .parent img{
-        max-width: 350px;
-    }
-    .subscrib .inp{
-        min-width: 77%;
-    }
-    .subscrib-ul{
-        display: block;
-        text-align: center;
-    }
-    .subscrib ul li{
-        display: block;
-        margin-bottom: 5px;
-    }
-    .subscrib ul li::after{
-        content: '';
-    }
     .carousel-item{
         position: relative;
     }
@@ -624,6 +613,39 @@ footer p{
     border-radius: 5%;
     max-height: 50%;
 }
+    .carousel-item:first-of-type .text,
+    .carousel-item:last-of-type .text{
+    top: 40%;}
+    .slider h2{
+        font-size: 26px !important;
+    }
+    .slider h3{
+        font-size: 20px;
+    }
+    .btn-slider{
+        padding: 7px 24px;
+    }
+    .performance .parent img{
+        max-width: 350px;
+    }
+    .subscrib .inp{
+        min-width: 80%;
+    }
+    .subscrib-ul{
+        display: block;
+        text-align: center;
+    }
+    .subscrib ul li{
+        display: block;
+        margin-bottom: 5px;
+    }
+    .subscrib .inp span{
+        left: 88%;
+    }
+    .subscrib ul li::after{
+        content: '';
+    }
+  
 hr{
     display: block;
 }
