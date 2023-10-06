@@ -42,7 +42,7 @@ nav ul li a{
     font-weight: 500;
 }
 .dropdown-menu{
-    min-width: 400px;
+    min-width: 300px;
 }
 .icons li i:hover{
     color: var(--red);
@@ -577,7 +577,7 @@ footer p{
         max-width: 350px;
     }
     .subscrib .inp{
-        min-width: 80%;
+        min-width: 77%;
     }
     .subscrib-ul{
         display: block;
