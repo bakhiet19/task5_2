@@ -13,10 +13,10 @@
     --black : #000;
 }
 
-section{
+/* section{
     margin-top: var(--margin);
     margin-bottom: var(--margin);
-}
+} */
 
 /* end global section */
 
@@ -230,6 +230,11 @@ hr{
 
 /* start features section */
 
+.features{
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+
 .features .row .child{
     margin-top: 40px;
 }
@@ -256,6 +261,8 @@ hr{
 start performance section */
 
 .performance{
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
     max-width: 100%;
     min-width: 100%;
     margin-top: 60px;
@@ -434,7 +441,22 @@ end performance section */
     border-radius: 50%;
 }
 
+
 /* end subscrib section */
+
+footer ul li img{
+    padding-top: 12px 5px;
+    width: 30px;
+    margin-top: 12px;
+}
+
+
+footer p{
+    margin-top: 12px;
+}
+
+
+
 
 .red{
     background-color: rgba(255, 0, 0, 0.5); 
@@ -494,7 +516,10 @@ end performance section */
         max-width: 750px;
     }
     .subscrib .inp span{
-        left: 88%;
+        left: 92%;
+    }
+    .subscrib .inp{
+        min-width: 70%;
     }
 }
 
@@ -510,6 +535,9 @@ end performance section */
     }
     .performance .parent img{
         max-width: 467px;
+    }
+    .subscrib .inp{
+        min-width: 80%;
     }
     
 }
